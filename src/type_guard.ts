@@ -61,6 +61,8 @@ type Animal = Dog | Fish
 function moveAnimal(animal: Animal) {
   let speed
   switch (animal.type) {
+    // 타입으로 구분지어서 유사 타입가드를 설정 << 구별된 유니언
+    // 타입에 뭐가 올수 있는지 타입스크립트가 알고 있어서 오타가 나면 바로 오류를 띄워줌.
     case 'dog':
       speed = animal.running_speed
       break

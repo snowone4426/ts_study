@@ -38,4 +38,4 @@ class Department1 {
 }
 
 const user = new Department1('1', 'han', 5)
-console.log(user.name) // han
+//console.log(user.name) // han
